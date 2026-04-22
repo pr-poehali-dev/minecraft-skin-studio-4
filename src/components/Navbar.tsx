@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
-const Navbar = () => {
+interface NavbarProps {
+  onOrderClick: () => void;
+}
+
+const Navbar = ({ onOrderClick }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -13,8 +17,8 @@ const Navbar = () => {
 
   const links = [
     { label: "Главная", href: "#hero" },
+    { label: "О нас", href: "#about" },
     { label: "Услуги", href: "#services" },
-    { label: "Заказать", href: "#order" },
     { label: "Отзывы", href: "#reviews" },
   ];
 
@@ -57,10 +61,10 @@ const Navbar = () => {
             </button>
           ))}
           <button
-            onClick={() => scrollTo("#order")}
+            onClick={onOrderClick}
             className="pixel-btn pixel-border bg-[#4ade80] text-[#050805] px-5 py-2 text-sm font-pixel tracking-widest rounded-sm hover:bg-[#22c55e] transition-colors"
           >
-            ЗАКАЗАТЬ
+            ЗАКАЗАТЬ СКИН
           </button>
         </div>
 
@@ -80,6 +84,12 @@ const Navbar = () => {
               {l.label}
             </button>
           ))}
+          <button
+            onClick={() => { onOrderClick(); setMenuOpen(false); }}
+            className="pixel-btn pixel-border bg-[#4ade80] text-[#050805] px-5 py-2 text-sm font-pixel tracking-widest rounded-sm text-center"
+          >
+            ЗАКАЗАТЬ СКИН
+          </button>
         </div>
       )}
     </nav>
