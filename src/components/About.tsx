@@ -29,7 +29,7 @@ const About = () => {
         <div className="text-center mb-16">
           <div className="pixel-badge text-[#4ade80] mb-4 inline-block reveal">О НАС</div>
           <h2 className="font-pixel text-4xl lg:text-5xl text-white mb-4 reveal">
-            СТУДИЯ <span className="text-[#4ade80] glow-text-green">SKINCRAFT</span>
+            СТУДИЯ <span className="text-[#4ade80] glow-text-green">PIXELFORGE</span>
           </h2>
         </div>
 
@@ -37,7 +37,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
           <div className="reveal space-y-5">
             <p className="text-[#c8ffc8]/75 leading-relaxed text-base">
-              <span className="text-[#4ade80] font-pixel text-sm">SkinCraft</span> — студия уникальных Minecraft-скинов, основанная в{" "}
+              <span className="text-[#4ade80] font-pixel text-sm">PixelForge</span> — студия уникальных Minecraft-скинов, основанная в{" "}
               <span className="text-white font-semibold">2026 году</span>. Мы работаем с любовью к пиксельному искусству и понимаем, как важно выглядеть круто на любом сервере.
             </p>
             <p className="text-[#c8ffc8]/65 leading-relaxed">
@@ -88,6 +88,15 @@ const About = () => {
               <div>
                 <div className="font-pixel text-white text-xs">ОСНОВАНЫ В 2026</div>
                 <div className="text-[#c8ffc8]/45 text-xs mt-1">Молодая студия с большим сердцем</div>
+              </div>
+            </div>
+
+            <div className="border border-[#00d9ff]/15 bg-[#050805] rounded-sm p-4 flex items-center gap-4">
+              <div className="text-2xl">🌐</div>
+              <div>
+                <div className="font-pixel text-[#00d9ff] text-xs">НАШ СЕРВЕР</div>
+                <div className="text-white text-sm font-pixel mt-0.5">CreeperDrop.ru</div>
+                <div className="text-[#c8ffc8]/40 text-xs">Заходи — мы там!</div>
               </div>
             </div>
           </div>

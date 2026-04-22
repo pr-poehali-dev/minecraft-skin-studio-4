@@ -46,7 +46,7 @@ const Navbar = ({ onOrderClick }: NavbarProps) => {
             </div>
           </div>
           <span className="font-pixel text-[#4ade80] text-lg tracking-widest glow-text-green">
-            SKIN<span className="text-white">CRAFT</span>
+            PIXEL<span className="text-white">FORGE</span>
           </span>
         </div>
 

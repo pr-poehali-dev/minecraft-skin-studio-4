@@ -38,7 +38,7 @@ const Hero = ({ onOrderClick }: HeroProps) => {
           {/* Text */}
           <div className="flex-1 text-center lg:text-left">
             <div className="pixel-badge text-[#4ade80] mb-6 inline-block animate-fade-in">
-              ✦ Студия скинов Minecraft · с 2026 года ✦
+              ✦ PixelForge · Студия скинов Minecraft · с 2026 года ✦
             </div>
 
             <h1 className="font-pixel text-5xl lg:text-7xl leading-tight mb-6 animate-slide-up">
